@@ -7,11 +7,41 @@ Data WareHouse -
 data warehouse is a central, organized digital repository that stores large amounts of historical data from multiple sources (like sales, finance, and marketing) to enable easy reporting, analysis, and decision-making. 
 
 Star Schema - 
-A star schema is a foundational data warehouse design that organizes data into a central fact table surrounded by dimension tables.
+A Star Schema is a foundational data warehouse design that organizes data into a central fact table surrounded by dimension tables.
 
 Fact Table - A fact table is the central, long table in a star schema that stores numerical, measurable data about business events. 
              It focuses on what happened, using foreign keys to connect to surrounding dimension tables for context (like time, customer, or product).
 Dimensions Table - A dimension table in a star schema is a database table containing descriptive, textual information that provides context—the who, what, where, and when—to the numerical data in a fact table.
 
-AOV,revenue,return rate, 
+AOV, LTV, Repeat Rate, Return Rate - 
 
+1. Revenue (The Total Money)
+Definition: The total amount of money a business brings in from selling goods or services before any expenses are deducted.
+Real-Life Example: If the coffee shop sells 100 coffees at $5 each in one day, the revenue is $500.
+Why it matters: It tells you the scale of your sales. 
+
+2. AOV - Average Order Value (The Bag Size)
+Definition: The average amount of money a customer spends every time they make a purchase. 
+It is calculated by dividing total revenue by the number of orders.
+Real-Life Example: If that same $500 revenue came from 50 different customers, the AOV is $10 ($500 / 50). This means, on average, every customer bought a coffee ($5) plus a pastry ($5).
+Why it matters: Helps you understand if customers are buying more than just one item. 
+
+3. LTV - Lifetime Value (The Total Relationship)
+Definition: The total revenue a business can expect to earn from a single customer throughout their entire relationship with the brand.
+Real-Life Example: A regular customer visits the coffee shop 2 times a week, spending $10 per visit, for 2 years. Their LTV is:
+$10 (AOV) × 2 (visits/week) × 52 (weeks) × 2 (years) = $2,080.
+Why it matters: Shows that keeping a customer is more profitable than constantly finding new ones. 
+
+4. Repeat Rate (The Loyalty)
+Definition: The percentage of customers who come back to buy from your store more than once. It measures customer loyalty.
+Real-Life Example: Out of 100 people who visited the shop this month, 30 have been there before. The Repeat Rate is 30%.
+Why it matters: A high rate indicates customers are satisfied and loyal; a low rate means they aren't coming back. 
+
+5. Return Rate (The Quality Check)
+Definition: The percentage of products sold that are brought back by customers for a refund or exchange.
+Real-Life Example: The coffee shop sells 100 bags of coffee beans, but 5 customers return them because they didn't like the roast. The Return Rate is 5%.
+Why it matters: High return rates often indicate problems with product quality or customer expectations. 
+
+Purpose of Staging
+The primary goal of a staging area is to ensure that the data entering the final system is high-quality, consistent, and correctly formatted without negatively impacting the performance of operational source systems.
+Such as Data cleaning and validation , Transformation. They keep the raw data safe and ensures that the data has no neagtive values and null values.
