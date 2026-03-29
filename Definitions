@@ -1,0 +1,17 @@
+ETL - Extract Transform and Load 
+Extract: Gathering data from diverse sources like SQL/NoSQL databases, CRM platforms, or flat files.
+Transform: Cleaning, filtering, aggregating, and reformatting the data based on business rules.
+Load: Writing the transformed data into the final target repository (e.g., a data warehouse)
+
+Data WareHouse - 
+data warehouse is a central, organized digital repository that stores large amounts of historical data from multiple sources (like sales, finance, and marketing) to enable easy reporting, analysis, and decision-making. 
+
+Star Schema - 
+A star schema is a foundational data warehouse design that organizes data into a central fact table surrounded by dimension tables.
+
+Fact Table - A fact table is the central, long table in a star schema that stores numerical, measurable data about business events. 
+             It focuses on what happened, using foreign keys to connect to surrounding dimension tables for context (like time, customer, or product).
+Dimensions Table - A dimension table in a star schema is a database table containing descriptive, textual information that provides context—the who, what, where, and when—to the numerical data in a fact table.
+
+AOV,revenue,return rate, 
+
